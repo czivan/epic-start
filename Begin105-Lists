@@ -1,0 +1,4 @@
+lucky_numbers = [4, 8, 15, 16, 23, 42]
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+friends[1] = "Mike"     #Takhle se přepisuje pozice v již založeném listě
+print(friends[1:2])     #Vypíše všechny jména dle indexu, indexování začíná od 0 a poslední číslo se nebere
