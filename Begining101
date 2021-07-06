@@ -1,0 +1,122 @@
+print("__________________________________________________________________")
+print("| 1 | - Příběh kde se doplní jméno a věk přes proměnnou (variable)")
+character_name = "John"     #This is variable and defines the name of the character (text is a string)
+character_age = "35"    #Numbers can be written also without a quotation marks not as a text but like a number
+print("There once was a man named " + character_name + ", ")
+print("he was " + character_age + " years old. ")
+
+character_name = "Mike"     #This is like an update of a story, which overwrite the previous variable with same name
+character_age = "50"
+print("He really liked the name " + character_name + " , ")
+print("but he didn´t like being " + character_age + " . ")
+    # Nová část kódu
+print("______________________________________________")
+print("| 2 | - Ukázka použití lomítek v textu(string)")
+print("Frýdek\nMístek") #Znak \n znamená, že text se rozdělí do více řádků
+print("Frýdek\"Místek") #Tohle znamená, že se do textu vloží uvozovky, bez lomítka by to byla chyba v kodu
+print("Frýdek\Místek")  #Samostatné lomítko se ukáže prostě jako lomítko
+    # Nová část kódu
+print("_____________________________________________")
+print("| 3 | - Ukázka dosazeni variable jako stringu")
+phrase = "Frýdek Místek"    #Variable pro dosazení do kódu níže
+print(phrase)
+    # Nová část kódu
+print("______________________________________________")
+print("| 4 | - Ukázka spojení více proměnných + textu")
+nazev = "Frýdek"    #Variable pro dosazení do kódu níže
+nazev2 = "Místek"
+print(nazev + " " + nazev2 + " je super")   #Dosazené variable a použité + jako concatenation (spojení)
+    # Nová část kódu
+print("___________________________________________________________________________")
+print("| 5 | - Ukázka jak zmenšit nebo zvětšit všechny písmena ve stringu najednou")
+phrase = "Frýdek Místek"
+print(phrase.lower())   #Kod .lower zmenší všechny písmena
+phrase = "Frýdek Místek"
+print(phrase.upper())   #Kod .upper zvětší všechny písmena
+    # Nová část kódu
+print("________________________________________________________________________________")
+print("| 6 | - Ukázka jak zkontrolovat zda jsou v textu všechny písmena malá nebo velká")
+phrase = "Frýdek Místek"
+print(phrase.islower())   #Zkontroluje a řekne ti (True False) jestli jsou nebo nejsou všechny písmena malé
+print(phrase.isupper())   #Zkontroluje a řekne ti (True False) jestli jsou nebo nejsou všechny písmena velké
+    # Nová část kódu
+print("_______________________________________________________________________________________________________________")
+print("| 7 | - Ukázka spojení funkcí, kde první nastaví všechny písmena jako malá a druhá zkontroluje jestli to tak je")
+phrase = "Frýdek Místek"
+print(phrase.lower().islower()) #Spojení funkcí, prvně přemění všechny písmena na malé a pak zkontroluje zda to tak je
+    # Nová část kódu
+print("____________________________________________________________")
+print("| 8 | - Ukázka spočítání počtu znaků i s mezerami ve stringu")
+phrase = "Frýdek Místek"
+print(len(phrase))  #Spočítá počet znaků(míst) ve stringu i s mezerami
+    # Nová část kódu
+print("_______________________________________________________")
+print("| 9 | - Ukázka vypsání písmena v pořadí, které napíšete")
+phrase = "Frýdek Místek"
+         #0123456
+print(phrase[0])  #Vypíše písmeno v pořadí, které napíšete, třeba 0 znamená první písmeno F
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 10 | - Spočítá, na kterém místě se dané písmeno nachází")
+phrase = "Frýdek Místek"
+print(phrase.index("F"))  #Spočítá na kterém místě je písmeno
+    # Nová část kódu
+print("________________________________________________________")
+print("| 11 | - Spočítá, kde dané písmeno nebo kus textu začíná")
+phrase = "Frýdek Místek"
+print(phrase.index("Míst"))  #Ukáže na kterém místě začíná
+    # Nová část kódu
+print("________________________________________________________")
+print("| 12 | - Vymění první uvedený text za druhý uvedený text")
+phrase = "Frýdek Místek"
+print(phrase.replace("Frýdek", "Pouze"))
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 13 | -  Numbers - basics")
+print(2)    #U čísel se nepíšou uvozovky, jen pouze pokud je chcete jako součást stringu, viz níže
+print(3 + 4.5)
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 14 | -  Numbers - variables")
+print(3 + 4.5)
+my_num = 5
+print(my_num)
+print(str(my_num) + " je moje oblíbené číslo")  #Použití proměnné + konverze čísla na string a přidání textu
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 15 | -  Numbers - abs - absolute numbers")
+my_num = -5
+print(abs(my_num))
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 16 | -  Numbers - pow")
+my_num = -5
+print(pow(4, 6))    #Nechápu funkci, musím dohledat
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 17 | -  Numbers - max/min")
+my_num = -5
+print(min(4, 6))    #Ze zadaných čísel vybere to největší nebo nejmenší číslo
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 18 | -  Numbers - round")
+my_num = -5
+print(round(3.2))    #Zaokrouhlování dle klasických pravidel
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 19 | -  Math - import flooring")
+from math import *
+my_num = -5
+print(floor(3.7))    #Tato funkce odsekne desetinnou čárku a zůstane pouze celé číslo
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 20 | -  Math - import ceil")
+from math import *
+my_num = -5
+print(ceil(3.2))    #Tato funkce zaokrouhlí číslo nahoru, ať je hodnota jakákoliv
+    # Nová část kódu
+print("_________________________________________________________")
+print("| 21 | -  Math - import")
+from math import *
+my_num = -5
+print(sqrt(49))    #Tato funkce odmocňuje
