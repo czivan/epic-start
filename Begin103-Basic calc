@@ -1,0 +1,4 @@
+num1 = input("Enter the first number: ")
+num2 = input("Enter the second number: ")
+result = float(num1) + float(num2)      #int() je pouze pro celá čísla a float() je pro desetinná čísla
+print(result)
